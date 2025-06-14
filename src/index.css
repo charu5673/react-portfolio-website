@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Coolvetica';
+  src: url(./assets/fonts/Coolvetica.otf);
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(./assets/fonts/Inter.ttf);
+}
+
+:root[data-theme="normal"] {
+
+  /* colors */
+  --text: #0f0f0f;
+  --text-half: #0f0f0f7b;
+  --background: #f1f1f1;
+  --primary: #e2e5ff;
+  --secondary: #2e3237;
+  --accent: #0af7ff;
+
+  /* icons and images  */
+  --toggle-icon: url('assets/svg/normal_mode.svg');
+  --hero-image: url('assets/images/hero_image.jpg');
+  --projects-bg: url('assets/images/projects_background.png');
+
+  /* fonts */
+  --font: 'Inter';
+
+  /* css styles */
+  --caps: none;
+
+}
+
+:root[data-theme="alt"] {
+
+  /* colors */
+  --text: #0f0f0f;
+  --text-half: #0f0f0f7b;
+  --background: #f1f1f1;
+  --primary: #fff700;
+  --secondary: #2e3237;
+  --accent: #0af7ff;
+
+  /* icons and images  */
+  --toggle-icon: url('assets/svg/alt_mode.svg');
+  --hero-image: url('assets/images/hero_image_alt.png');
+  --projects-bg: url('assets/images/projects_background_alt.png');
+
+  /* fonts */
+  --font: 'Coolvetica';
+
+  /* css styles */
+  --caps: lowercase;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+  text-transform: var(--caps);
+}
+
+body, p, h1, h2, h3, h4, h5, h6, span, a, div {
+  cursor: default;
+}
+
+button, a, input, textarea, select, label {
+  cursor: pointer;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--text);
+}

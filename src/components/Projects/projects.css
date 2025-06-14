@@ -1,0 +1,95 @@
+.projects-section-outer {
+  width: 100vw;
+  padding-bottom: 80px;
+}
+
+.projects-section-outer h2 {
+	margin-top: 50px;
+  text-align: center;
+  width: 100%;
+  font-size: 50px;
+  color: var(--background);
+}
+
+.projects-outer {
+	margin-top: 50px;
+  padding-top: 50px;
+	width: 100vw;
+  background-image: linear-gradient(to bottom, var(--text) 10%, transparent 50%, var(--text) 90%), var(--projects-bg);
+  background-size: 100% auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: grid;
+  padding-left: 50px;
+  padding-right: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  gap: 50px;
+}
+
+.project-card-outer {
+  display: flex;
+  height: 300px;
+  padding: 30px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  gap: 20px;
+  color: var(--background);
+  align-items: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.project-card-outer:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 0 var(--accent), -2px -2px 0 var(--primary);
+}
+
+.project-card-outer > img {
+  height: 200px;
+  aspect-ratio: 1/1;
+  width: auto;
+}
+
+.project-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 200px;
+}
+
+.project-card-content-top {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.project-card-content-top h3 {
+  color: var(--background);
+  cursor: pointer;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.project-card-content-top a {
+  text-decoration: none;
+}
+
+.project-card-content p {
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 18px;
+  opacity: 0.8;
+  text-shadow: 2px 2px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px  1px 0 black, 1px  1px 0 black;
+}
+
+.project-card-content-top a:last-child {
+  height: 50px;
+}
+
+.project-card-content svg {
+  height: 50px;
+  filter: drop-shadow(1px 1px 1px var(--background));
+}

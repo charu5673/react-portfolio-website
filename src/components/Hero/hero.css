@@ -1,0 +1,78 @@
+.hero-section-outer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  justify-content: center;
+  column-gap: 40px;
+  color: var(--background);
+  padding: 60px;
+  background: var(--background-gradient);
+  margin-top: 30px;
+}
+
+.hero-section-outer > .hero-image {
+  background-image: var(--hero-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: contain;
+  height: 500px;
+  aspect-ratio: 1/1;
+  width: auto;
+  margin-left: auto;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.hero-section-outer > .hero-image:hover {
+  box-shadow: 2px 2px 0 var(--accent), -2px -2px 0 var(--primary);
+}
+
+.hero-section-outer .hero-section-text-area {
+  height: 500px;
+  padding: 30px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-section-outer h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.hero-section-outer p {
+  font-size: 23px;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.hero-section-outer a {
+  text-decoration: none;
+}
+
+.hero-section-outer button {
+  border: none;
+  border-radius: 100px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  padding: 20px;
+  gap: 10px;
+  font-weight: 500;
+  background: linear-gradient(30deg, var(--primary), var(--accent));
+  margin-top: 30px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hero-section-outer button:hover {
+  transform: scale(1.1);
+}
+
+.hero-section-outer svg {
+  height: 40px;
+  width: 40px;
+}
