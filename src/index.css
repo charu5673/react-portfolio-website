@@ -15,13 +15,13 @@
   --text-half: #0f0f0f7b;
   --background: #f1f1f1;
   --primary: #e2e5ff;
-  --secondary: #2e3237;
+  --secondary: #252525;
   --accent: #0af7ff;
 
   /* icons and images  */
   --toggle-icon: url('assets/svg/normal_mode.svg');
   --hero-image: url('assets/images/hero_image.jpg');
-  --projects-bg: url('assets/images/projects_background.png');
+  --projects-bg: url('assets/images/projects_background.jpg');
 
   /* fonts */
   --font: 'Inter';

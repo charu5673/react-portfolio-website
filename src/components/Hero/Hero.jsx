@@ -21,6 +21,15 @@ function Hero() {
   const { theme } = useTheme();
 
   const textShadow = {
+    textShadow: '3px 3px 1px var(--text)',
+  }
+
+  const textShadowSmall = {
+    background: 'var(--text)',
+    padding: '10px',
+  }
+
+  const textShadowAlt = {
     textShadow: '-1px -1px 0 black, 1px -1px 0 black, -1px  1px 0 black, 1px  1px 0 black, 2px 2px 0 var(--accent)',
   }
 
@@ -28,8 +37,8 @@ function Hero() {
     <div className='hero-section-outer'>
       <div className='hero-image' />
       <div className='hero-section-text-area'>
-        <h1 style={ theme == 'normal' ? {} : textShadow } >Hi! I'm Charu Mishra { theme == 'normal' ? '' : ':]'}</h1>
-        <p>I'm a 3rd year student of computer science, getting my bachelor's degree at DIT university in Dehradun.</p>
+        <h1 style={ theme == 'normal' ? textShadow : textShadowAlt } >Hi! I'm <strong>Charu Mishra</strong> { theme == 'normal' ? '' : ':]'}</h1>
+        <p style={ theme == 'normal' ? textShadowSmall : {} } >I'm a 3rd year student of computer science, getting my bachelor's degree at DIT university in Dehradun.</p>
         <a href='https://github.com/charu5673' target="_blank">
           <button>
             Check out my GitHub!

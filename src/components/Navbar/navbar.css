@@ -17,9 +17,10 @@
 	font-weight: 400;
 	font-size: 40px;
   cursor: default;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
 }
 
-.navbar-outer h2:hover {
+.navbar-outer h2.shadow:hover {
   transform: scale(1.1);
+  text-shadow: 1px 1px 0 var(--accent);
 }

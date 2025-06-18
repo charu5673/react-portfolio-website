@@ -12,6 +12,7 @@ import './mainpage.css';
 import Navbar from '../../components/Navbar/Navbar';
 import Hero from '../../components/Hero/Hero';
 import Projects from '../../components/Projects/Projects';
+import Experience from '../../components/Experience/Experience';
 
 
 // hooks import
@@ -24,8 +25,8 @@ function MainPage() {
       <Navbar />
       <Hero />
       <Projects />
-      {/* <Experience />
-      <Skills />
+      <Experience />
+      {/* <Skills />
       <Contact />
       <Resume />
       <Footer /> */}
