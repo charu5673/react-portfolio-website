@@ -1,5 +1,4 @@
 // css import
-import '../../index.css';
 import './hero.css';
 
 // react functionalities import 

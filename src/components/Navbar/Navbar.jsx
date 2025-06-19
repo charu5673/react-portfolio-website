@@ -1,5 +1,4 @@
 // css import
-import '../../index.css';
 import './navbar.css'
 
 // react functionalities import 

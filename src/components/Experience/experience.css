@@ -53,6 +53,8 @@
 	grid-template-columns: 25px 1fr;
 	grid-template-rows: 50px 1fr;
 	padding-bottom: 50px;
+	align-items: center;
+	justify-content: center;
 }
 
 .experience-card-dot {
@@ -110,6 +112,7 @@
 	background: var(--text);
 	transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 	padding: 20px;
+	padding-left: 30px;
 }
 
 .experience-card-info-right li {
@@ -119,7 +122,7 @@
 
 .experience-card-info-right:hover {
 	transform: scale(1.05);
-	box-shadow: 5px 5px 3px black;
+	box-shadow: 0 0 10px black;
 }
 
 .experience-card-info-left-top {

@@ -13,6 +13,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Hero from '../../components/Hero/Hero';
 import Projects from '../../components/Projects/Projects';
 import Experience from '../../components/Experience/Experience';
+import Skills from '../../components/Skills/Skills';
 
 
 // hooks import
@@ -26,8 +27,8 @@ function MainPage() {
       <Hero />
       <Projects />
       <Experience />
-      {/* <Skills />
-      <Contact />
+      <Skills />
+      {/* <Contact />
       <Resume />
       <Footer /> */}
     </>

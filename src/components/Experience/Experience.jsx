@@ -1,5 +1,4 @@
 // css import
-import '../../index.css';
 import './experience.css';
 
 // react functionalities import 

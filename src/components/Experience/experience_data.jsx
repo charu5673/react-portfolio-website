@@ -42,9 +42,9 @@ export const experiences = [
     endMonth: "June",
     role: "Core Member",
     responsibilities: [
-      "Contributed to various club events by helping with content writing, editing social media posts, and assisting with on-ground tasks during college fests",
-      "Coordinated and managed a Git & GitHub workshop for chapter members as part of an in-house technical event",
-      "Explored Android app development independently through the app team, building basic projects and learning alongside peers",
+      "Contributed to various club events by helping with content writing, editing social media posts, and assisting with on-ground tasks during college fests.",
+      "Coordinated and managed a Git & GitHub workshop for chapter members as part of an in-house technical event.",
+      "Explored Android app development independently through the app team, building basic projects and learning alongside peers.",
       "Took part in team discussions and planning sessions, contributing ideas and staying involved across different initiatives."
     ],
     image: acmIcon,
