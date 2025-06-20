@@ -2,6 +2,7 @@
 import './hero.css';
 
 // react functionalities import 
+import { forwardRef } from 'react';
 
 
 // pages import
@@ -15,7 +16,7 @@ import useTheme from '../../hooks/useTheme';
 
 
 
-function Hero() {
+const Hero = forwardRef((props, ref) => {
 
   const { theme } = useTheme();
 
@@ -33,7 +34,7 @@ function Hero() {
   }
 
   return (
-    <div className='hero-section-outer'>
+    <div ref={ref} className='hero-section-outer'>
       <div className='hero-image' />
       <div className='hero-section-text-area'>
         <h1 style={ theme == 'normal' ? textShadow : textShadowAlt } >Hi! I'm <strong>Charu Mishra</strong> { theme == 'normal' ? '' : ':]'}</h1>
@@ -49,6 +50,6 @@ function Hero() {
       </div>
     </div>
   );
-}
+});
 
 export default Hero;

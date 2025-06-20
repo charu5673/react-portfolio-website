@@ -10,7 +10,7 @@
   background-size: 100% auto;
   background-position: bottom;
   background-repeat: no-repeat;
-  margin-top: 12vh;
+  padding-top: calc( 12vh + 60px );
 }
 
 .hero-section-outer > .hero-image {

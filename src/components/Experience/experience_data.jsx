@@ -16,7 +16,7 @@ export const experiences = [
       "Attended and participated in client meetings, including showcasing projects, deriving requirements and changes, and providing specific updates."
     ],
     image: pqIcon,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a congue ante. Praesent ultrices nibh ut sodales egestas. Nunc at ante laoreet felis rutrum porttitor id eget nunc. Vivamus mollis.",
+    desc: "I joined PriyaQubit as a flutter intern and worked on a client-project involving real-time communication which I developed using Flutter, Python backend, and MongoDB database. Later I participated in the development and de-bugging of two client websites where I worked with JavaScript and Flask. During this time, I gained valuable experience in development, communication, project presentation, and teamwork.",
   },
   {
     orgName: "ACM Student Chapter",
@@ -32,7 +32,7 @@ export const experiences = [
       "Hosted team meetings and checked in regularly with members to encourage consistent progress."
     ],
     image: acmIcon,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a congue ante. Praesent ultrices nibh ut sodales egestas. Nunc at ante laoreet felis rutrum porttitor id eget nunc. Vivamus mollis.",
+    desc: "I became the App Lead for the ACM Student Chapter in my 2nd year. During this time, I mentored the team members, provided them with resources, and developed references for their learning process. I conducted meetings to track their progress, as well as contributed to tech events.",
   },
   {
     orgName: "ACM Student Chapter",
@@ -48,6 +48,6 @@ export const experiences = [
       "Took part in team discussions and planning sessions, contributing ideas and staying involved across different initiatives."
     ],
     image: acmIcon,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a congue ante. Praesent ultrices nibh ut sodales egestas. Nunc at ante laoreet felis rutrum porttitor id eget nunc. Vivamus mollis.",
+    desc: "I joined ACM Student Chapter in my first year as a member, and later became a part of the core team. During this time I assisted with promoting and carrying out events, and creating social media content. I also headed a workshop, and explored app development alongside the team. ",
   },
 ];

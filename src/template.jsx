@@ -1,5 +1,4 @@
 // // css import
-// import '../../index.css';
 // import './.css';
 
 // // react functionalities import 

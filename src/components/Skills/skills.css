@@ -1,6 +1,7 @@
 .skills-section-outer {
   width: 100vw;
   padding: 50px;
+	padding-top: 12vh;
 }
 
 .skills-section-outer h3 {
@@ -17,10 +18,10 @@
 }
 
 .skills-outer {
-  background-color: var(--text);
+  background-color: var(--background);
   border-radius: 30px;
   padding: 30px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.353);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.711);
   width: 70%;
   justify-self: flex-start;
 }
@@ -39,14 +40,14 @@
 
 .skills-outer h4 {
   font-size: 25px;
-  color: var(--background);
+  color: var(--text);
   font-weight: 500;
   margin-right: auto;
 }
 
 .skills-outer h5 {
   font-size: 20px;
-  color: var(--background);
+  color: var(--text);
   font-weight: 500;
 }
 
@@ -59,7 +60,7 @@
   width: 80px;
   height: 80px;
   transition: transform 0.2s ease-in-out, height 0.2s ease-in-out, margin 0.2s ease-in-out;
-  border: 1px solid black;
+  border: 1px solid var(--background);
 }
 
 .skill:hover {
@@ -73,7 +74,7 @@
   border-radius: 100px;
   height: 10px;
   display: grid;
-  background-color: var(--background);
+  background-color: var(--text);
 }
 
 .skill-meter-filled {
@@ -83,13 +84,12 @@
   height: 10px;
   width: 0;
   transition: width 0.5s ease-in-out;
-  background-color: var(--accent);
 }
 
 .skill-percentage {
   grid-row: 1/2;
   grid-column: 1/2;
-  color: var(--background);
+  color: var(--text);
   font-weight: 600;
   transform: translate(-20px,20px);
   transition: margin 0.5s ease-in-out;

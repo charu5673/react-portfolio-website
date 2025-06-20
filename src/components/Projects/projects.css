@@ -1,6 +1,7 @@
 .projects-section-outer {
   width: 100vw;
   padding-bottom: 80px;
+	padding-top: 12vh;
 }
 
 .projects-section-outer-top {
@@ -46,7 +47,7 @@
   /* background: linear-gradient(-45deg, color-mix(in srgb, var(--accent) 5%, transparent), #ffffff10); */
   /* border: 2px solid black; */
   border-radius: 10px;
-  box-shadow: 0 0 5px black, 0 0 10px black;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.234);
   gap: 20px;
   color: var(--background);
   align-items: center;

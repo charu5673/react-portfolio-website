@@ -2,6 +2,7 @@
 	width: 100vw;
 	padding-left: 150px;
 	padding-right: 150px;
+	padding-top: 12vh;
 }
 
 .experience-heading {
@@ -113,10 +114,13 @@
 	transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 	padding: 20px;
 	padding-left: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 15px;
 }
 
 .experience-card-info-right li {
-	margin-bottom: 15px;
 	font-weight: 500;
 }
 

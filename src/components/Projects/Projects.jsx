@@ -3,6 +3,7 @@ import './projects.css';
 
 // react functionalities import 
 import { useState } from 'react';
+import { forwardRef } from 'react';
 
 
 // pages import
@@ -20,7 +21,7 @@ import { projects, types, icons } from './projects_data';
 
 
 
-function Projects() {
+const Projects  = forwardRef((props, ref) => {
 
   const [selectedTypes, updateSelectedTypes] = useState(types);
   const [dialogFlag, setDialogFlag] = useState(false);
@@ -30,7 +31,7 @@ function Projects() {
   }
 
   return (
-    <div className='projects-section-outer'>
+    <div ref={ref} className='projects-section-outer'>
       <div className='projects-section-outer-top'>
         <h2>My Projects</h2>
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="55px" onClick={()=>{handleClick(true)}}>
@@ -56,7 +57,7 @@ function Projects() {
     </div>
     
   );
-}
+});
 
 function ProjectCard({title, description, icon, website, github, tech}) {
 

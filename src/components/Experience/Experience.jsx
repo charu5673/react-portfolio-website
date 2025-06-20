@@ -2,6 +2,7 @@
 import './experience.css';
 
 // react functionalities import 
+import { forwardRef } from 'react';
 
 
 // pages import
@@ -18,7 +19,7 @@ import useTheme from '../../hooks/useTheme';
 import { experiences } from './experience_data';
 
 
-function Experience() {
+const Experience = forwardRef((props, ref) => {
 
   const { theme } = useTheme();
 
@@ -27,7 +28,7 @@ function Experience() {
   };
 
   return (
-    <div className='experience-section-outer'>
+    <div ref={ref} className='experience-section-outer'>
       <div className='experience-heading'>
         <div className='heading-line-dot'>
           <div className='heading-dot' style={ theme == 'alt' ? {boxShadow: '2px 0 2px var(--accent)'} : {} } />
@@ -51,7 +52,7 @@ function Experience() {
       }
     </div>
   );
-}
+});
 
 function ExperienceCard({org, start, end, role, work, icon, desc}) {
 
