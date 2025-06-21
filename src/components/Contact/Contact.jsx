@@ -56,18 +56,18 @@ const Contact = forwardRef((props, ref) => {
           </form>
         </div>
         <div className='contact-content-bottom'>
-          <div className='contact-point'>
+          <a className='contact-point' href="https://www.linkedin.com/in/charumishra/" target="_blank">
             <h4>LinkedIn</h4>
             <img src={linkedinIcon} />
-          </div>
-          <div className='contact-point'>
+          </a>
+          <a className='contact-point' href="https://x.com/charu5673" target="_blank">
             <h4>X (Twitter)</h4>
             <img src={xIcon} />
-          </div>
-          <div className='contact-point'>
+          </a>
+          <a className='contact-point' href="https://github.com/charu5673" target="_blank">
             <h4>GitHub</h4>
             <img src={githubIcon} />
-          </div>
+          </a>
         </div>
       </div>
     </div>

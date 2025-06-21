@@ -30,6 +30,7 @@
   align-items: center;
   flex-direction: row-reverse;
   justify-content: flex-end;
+  text-decoration: none;
 }
 
 .contact-point img {
