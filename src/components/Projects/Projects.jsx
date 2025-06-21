@@ -79,7 +79,12 @@ function ProjectCard({title, description, icon, website, github, tech}) {
         <div className='project-card-tech'>
           {
             tech.map(t => {
-              return <img key={crypto.randomUUID()} src={icons[t]} />
+              return (
+                <div key={crypto.randomUUID()} className='project-card-tech-outer'>
+                  <img src={icons[t]} />
+                  <h6>{t}</h6>
+                </div>
+              );
             })
           }
         </div>

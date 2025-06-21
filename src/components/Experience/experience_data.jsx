@@ -16,7 +16,7 @@ export const experiences = [
       "Attended and participated in client meetings, including showcasing projects, deriving requirements and changes, and providing specific updates."
     ],
     image: pqIcon,
-    desc: "I joined PriyaQubit as a flutter intern and worked on a client-project involving real-time communication which I developed using Flutter, Python backend, and MongoDB database. Later I participated in the development and de-bugging of two client websites where I worked with JavaScript and Flask. During this time, I gained valuable experience in development, communication, project presentation, and teamwork.",
+    desc: "I joined PriyaQubit as a flutter intern and worked on a client-project involving real-time communication which I developed using Flutter, Python backend, and MongoDB. Later, I participated in the development and debugging of two client websites where I worked with JavaScript and Flask. During this time, I gained valuable experience in development, communication, project presentation, and teamwork.",
   },
   {
     orgName: "ACM Student Chapter",

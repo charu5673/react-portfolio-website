@@ -124,7 +124,29 @@
   gap: 10px;
 }
 
-.project-card-tech > img {
+.project-card-tech-outer {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card-tech-outer > h6 {
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 400;
+  display: none;
+  text-wrap: nowrap;
+  color: var(--background);
+}
+
+.project-card-tech-outer:hover h6 {
+  display: block;
+}
+
+.project-card-tech-outer > img {
   height: 40px;
   width: 40px;
   filter: drop-shadow(1px 1px 0 var(--text)) drop-shadow(-1px -1px 0 var(--text));
