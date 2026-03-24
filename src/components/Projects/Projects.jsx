@@ -1,22 +1,6 @@
-// css import
 import './projects.css';
-
-// react functionalities import 
 import { useState } from 'react';
 import { forwardRef } from 'react';
-
-
-// pages import
-
-
-// components import
-
-
-// hooks import
-import useTheme from '../../hooks/useTheme';
-
-
-// data import
 import { projects, types, icons } from './projects_data';
 
 
@@ -95,8 +79,6 @@ function ProjectCard({title, description, icon, website, github, tech}) {
 
 function ProjectsSettingsDialog({types, selectedTypes, updateSelectedTypes, updateFlag}) {
 
-  const { theme } = useTheme();
-
   const [currentSelectedTypes, setCurrentSelectedTypes] = useState(selectedTypes);
 
   const handleClick = () => {
@@ -120,7 +102,7 @@ function ProjectsSettingsDialog({types, selectedTypes, updateSelectedTypes, upda
   return (
     <div className='projects-dialog-outer' onClick={closeDialog}>
       <div className='projects-dialog' onClick={stopEvent}>
-        <h4>Which projects would you like to see? { theme == 'normal' ? '' : ':]' } </h4>
+        <h4>Which projects would you like to see? { ':]' } </h4>
         {
           types.map(type => {
             return (

@@ -1,20 +1,6 @@
-// css import
 import './contact.css';
-
-// react functionalities import 
 import { forwardRef } from 'react';
 import emailjs from 'emailjs-com';
-
-// pages import
-
-
-// components import
-
-
-// hooks import
-
-
-// icons import
 import linkedinIcon from '../../assets/images/icons/linkedin.png';
 import githubIcon from '../../assets/images/icons/github.png';
 import xIcon from '../../assets/images/icons/x.png';

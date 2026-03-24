@@ -11,14 +11,6 @@ import MainPage from './pages/MainPage/MainPage';
 
 function App() {
 
-  if(localStorage.getItem('theme')) {
-    document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
-  }
-  else {
-    document.documentElement.setAttribute('data-theme', 'normal');
-    localStorage.setItem('theme','normal');
-  }
-
   return (
     <>
       <Router>

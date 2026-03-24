@@ -8,30 +8,7 @@
   src: url(./assets/fonts/Inter.ttf);
 }
 
-:root[data-theme="normal"] {
-
-  /* colors */
-  --text: #0f0f0f;
-  --text-half: #0f0f0f7b;
-  --background: #f1f1f1;
-  --primary: #e2e5ff;
-  --secondary: #252525;
-  --accent: #0af7ff;
-
-  /* icons and images  */
-  --toggle-icon: url('assets/svg/normal_mode.svg');
-  --hero-image: url('assets/images/hero_image.jpg');
-  --projects-bg: url('assets/images/projects_background.jpg');
-
-  /* fonts */
-  --font: 'Inter';
-
-  /* css styles */
-  --caps: none;
-  --letter-spacing: normal;
-}
-
-:root[data-theme="alt"] {
+:root {
 
   /* colors */
   --text: #0f0f0f;
@@ -42,9 +19,8 @@
   --accent: #0af7ff;
 
   /* icons and images  */
-  --toggle-icon: url('assets/svg/alt_mode.svg');
-  --hero-image: url('assets/images/hero_image_alt.png');
-  --projects-bg: url('assets/images/projects_background_alt.png');
+  --hero-image: url('assets/images/hero_image.png');
+  --projects-bg: url('assets/images/projects_background.png');
 
   /* fonts */
   --font: 'Coolvetica';

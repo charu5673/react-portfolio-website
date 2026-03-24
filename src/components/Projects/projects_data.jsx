@@ -25,7 +25,6 @@ import nonogramIcon from '../../assets/images/icons/nonogram.png';
 import unoIcon from '../../assets/images/icons/uno.png';
 import whetheritrainsIcon from '../../assets/images/icons/whetheritrains.png';
 import convoproIcon from '../../assets/images/icons/convopro.png';
-import cvapplicationIcon from '../../assets/images/icons/cvapplication.png';
 import battleshipIcon from '../../assets/images/icons/battleship.png';
 import todoIcon from '../../assets/images/icons/todo.png';
 import dotsandlinesIcon from '../../assets/images/icons/dotsandlines.png';
@@ -126,15 +125,6 @@ export const projects = [
     website: "",
     tech: ["Java","XML","Android Studio"],
 		types: ["App","Java"],
-  },
-  {
-    title: "Resume Generator",
-    description: "A website made using React that allows users to generate resumes. They have to enter information such as, personal details, educational details, and work experiences, and the generator automatically formats it into a professional, sleek resume.",
-    icon: cvapplicationIcon,
-    github: "https://github.com/charu5673/cv-application",
-    website: "https://generateresumecv.netlify.app/",
-    tech: ["React","JavaScript","CSS","Netlify"],
-		types: ["Web","React","JavaScript"],
   },
 ];
 

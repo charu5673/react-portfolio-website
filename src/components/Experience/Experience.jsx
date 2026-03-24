@@ -1,27 +1,10 @@
-// css import
 import './experience.css';
-
-// react functionalities import 
 import { forwardRef } from 'react';
-
-
-// pages import
-
-
-// components import
-
-
-// hooks import
-import useTheme from '../../hooks/useTheme';
-
-
-// data import
 import { experiences } from './experience_data';
 
 
 const Experience = forwardRef((props, ref) => {
 
-  const { theme } = useTheme();
 
   const shadow = {
     boxShadow: '2px 2px 2px var(--accent)',
@@ -31,8 +14,8 @@ const Experience = forwardRef((props, ref) => {
     <div ref={ref} className='experience-section-outer'>
       <div className='experience-heading'>
         <div className='heading-line-dot'>
-          <div className='heading-dot' style={ theme == 'alt' ? {boxShadow: '2px 0 2px var(--accent)'} : {} } />
-          <div className='heading-line' style={ theme == 'alt' ? shadow : {} } />
+          <div className='heading-dot' style={ {boxShadow: '2px 0 2px var(--accent)'} } />
+          <div className='heading-line' style={ shadow } />
         </div>
         <h2>My Experience</h2>
       </div>
@@ -56,7 +39,6 @@ const Experience = forwardRef((props, ref) => {
 
 function ExperienceCard({org, start, end, role, work, icon, desc}) {
 
-  const { theme } = useTheme();
 
   const shadow = {
     boxShadow: '2px 2px 2px var(--accent)',
@@ -64,13 +46,13 @@ function ExperienceCard({org, start, end, role, work, icon, desc}) {
 
   return (
     <div className='experience-card-outer'>
-      <div className='experience-card-dot' style={ theme == 'alt' ? {boxShadow: '2px 0 2px var(--accent)'} : {} } />
+      <div className='experience-card-dot' style={ {boxShadow: '2px 0 2px var(--accent)'}} />
       <div className='experience-card-time'>
         {start} to {end}
       </div>
-      <div className='experience-card-line' style={ theme == 'alt' ? shadow : {} } />
+      <div className='experience-card-line' style={ shadow } />
       <div className='experience-card-info'>
-        <div className={`experience-card-info-left ${theme}`} style={ theme == 'alt' ? shadow : {} } >
+        <div className={`experience-card-info-left`} style={ shadow } >
           <div className='experience-card-info-left-top'>
             <img src={icon} />
             <h3>{org}</h3>

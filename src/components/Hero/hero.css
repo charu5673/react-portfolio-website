@@ -1,9 +1,9 @@
 .hero-section-outer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  column-gap: 40px;
+  align-items: center;
+  width: 100vw;
   color: var(--background);
   padding: 60px;
   background-image: linear-gradient(to bottom, var(--text) 10%, var(--text-half) 50%, var(--text) 90%), var(--projects-bg);
@@ -13,17 +13,25 @@
   padding-top: calc( 12vh + 60px );
 }
 
-.hero-section-outer > .hero-image {
+.hero-section-outer > .hero-section-top-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-section-outer .hero-image {
   background-image: var(--hero-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   object-fit: contain;
-  height: 500px;
+  height: 150px;
   aspect-ratio: 1/1;
   width: auto;
   margin-left: auto;
   transition: box-shadow 0.3s ease-in-out;
+  border-radius: 100%;
 }
 
 .hero-section-outer > .hero-image:hover {
@@ -31,12 +39,11 @@
 }
 
 .hero-section-outer .hero-section-text-area {
-  height: 500px;
   padding: 30px;
   width: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  text-align: center;
 }
 
 .hero-section-outer h1 {
@@ -52,6 +59,10 @@
 
 .hero-section-outer a {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .hero-section-outer button {
@@ -66,7 +77,6 @@
   gap: 10px;
   font-weight: 500;
   background: linear-gradient(30deg, var(--primary), var(--accent));
-  margin-top: 30px;
   transition: transform 0.2s ease-in-out;
 }
 
